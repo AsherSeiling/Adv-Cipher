@@ -20,4 +20,3 @@ def encrypt_ui(shift, change):
         buffer += en.char_encode(message[i], shift)
     print(buffer)
 
-encrypt_ui(13, 2)
