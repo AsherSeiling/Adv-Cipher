@@ -6,6 +6,8 @@ def decryption(shift, letter_char):
         if letter_char.isupper() == True:
             upper = True
         shift_num = char_ref.index(letter_char.lower()) - shift
+        if shift_num < 0:
+            shift_num += 26
         if upper == True:
             return char_ref[shift_num].upper()
         else:
